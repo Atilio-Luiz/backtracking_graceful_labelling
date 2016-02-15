@@ -6,7 +6,7 @@ A python program that generates all graceful
 labelings of a simple undirected graph.
 
 ------------------
-Usage
+usage
 ------------------
 This program was built for the python interpreter.
 To run the program, type 'python labeler.py' in
@@ -14,7 +14,7 @@ the terminal. Make sure your terminal session is in
 the directory that contains the file 'labeler.py'.
 
 ------------------
--- edges.txt
+edges.txt
 ------------------
 The file edges.txt contains the adjacency list of the graph
 to be verified. An edge in the list is formatted '[a,b]' 
