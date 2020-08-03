@@ -1,6 +1,17 @@
 ## -----------------------------------------------------
-## Reads the list of adjacency of a given graph and
-## prints all of its graceful labellings.
+## Graceful labeler program
+## Author: Atilio Gomes Luiz
+## Date: August 2020
+## ---------------------------
+## Program that reads the list of adjacency of a given 
+## graph and prints all of its graceful labellings.
+## It is assumed that the vertex set of the graph is 
+## V(G) = {0,1,...,|V(G)|-1}
+## ---------------------------
+## Input: a file called edges.txt with the list of edges
+## Output: a file called labelings.txt containg a list of 
+## the vertex labels for each of the graceful labelings 
+## found, if any.
 ## -----------------------------------------------------
 
 import sys
@@ -49,12 +60,12 @@ def generate_labelling(G, edges, labelling, index, edge_labels):
 				
 
 if __name__ == "__main__":
-	# 0-indexed labelling
+	# 0-indexed labelling 
 	
 	## Open file with read only permit
     file_in = open('edges.txt')
     ## Open file with write permit
-    file_out  = open("graceful_labellings.txt",'w')
+    file_out  = open("labellings.txt",'w')
     sys.stdout = file_out
     
     ## Read the first line of input file
@@ -72,7 +83,7 @@ if __name__ == "__main__":
 		G[e[1]].append(e[0])
 		
 	## list with the final labelling
-    labelling = [-1]*len(G)
+    labelling = [-1]*len(G)    
     
     generate_labelling(G, edges, labelling, 0, set())
     
