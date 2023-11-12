@@ -1,5 +1,5 @@
 ----------------------------
-Graceful Labelling
+Backtracking Graceful Labelling
 ----------------------------
 
 A python program that generates all graceful
